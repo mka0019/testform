@@ -1,0 +1,386 @@
+body{
+
+   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+   background: #131e27;
+   line-height: 1.5;
+   /*possible color: #e7dae4*/
+
+}
+
+.header{
+
+	background-color: #033048;
+	padding: 30px;
+}
+
+.container{
+
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+.container .header-logo{
+	float: left;
+}
+
+.header-logo{
+      color: #fff;    
+}
+
+.header-logo, .contact-logo{
+	 font-size: 50px;
+      font-weight: 700;
+}
+
+.main-nav{
+
+	float: right;
+	margin-top: 15px;
+}
+
+a{
+   text-decoration: none;
+}
+
+.active{
+
+	color: #f9e42e;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.main-nav a:hover{
+	
+	color:#fff;
+}
+
+#center{
+
+	background-image: url(../images/header_ballon_big.jpg); 
+	height: 600px;
+	/*width: 80%;
+	margin: 0 auto;*/
+     /*display: flex; 
+     align-items: center; 
+     justify-content: center; */
+     /*This will align items dead in the center of the image. */
+     /*i put my .center h1 and .center a in a div, then applied the display flex on the outer div*/
+}
+
+.center-header{
+	display: flex; 
+     align-items: center; 
+     justify-content: center; 
+}
+
+.pic-background{
+
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
+
+h1, h2, h3{
+	font-family: 'Dancing Script', cursive;
+}
+
+
+.ion-ios-arrow-down, #center, #work-header h1{
+
+	color: #fff;
+	font-size: 100px;
+	font-weight: 600;
+	padding: 100px 100px;
+
+}
+
+
+/*.yellow{
+	color: #033048;
+	background-color: yellow;
+}
+
+.yellow:hover{
+	color: yellow;
+	background-color: #033048;
+}*/
+
+.button{
+
+	padding: 10px 50px;
+	border-radius: 5px;
+	font-size:30px;
+	font-weight: 800;
+
+}
+
+#About{
+
+	background-color: #fff;
+	padding: 50px;
+	/*color: #033048;*/
+
+}
+
+.container h2, h3{
+
+   font-weight: 600;
+   padding-bottom: 20px;
+   text-align: center;
+   color: #033048;
+
+}
+
+.container h2{
+   
+   font-size: 80px;
+
+}
+
+.container h3{
+   
+   font-size: 60px;
+}
+
+.container p{
+
+	width: 600px;
+	font-size: 25px;
+	font-weight: 500;
+	padding-bottom: 10px;
+	margin: 0 auto;
+
+}
+
+
+ul{
+	 list-style-type: square;
+}
+
+/*.list-uls{
+
+	padding: 20px;
+	margin-left: 50px;
+	font-size: 25px;
+}*/
+
+#work{
+
+	background-image: url(../images/clear_water.jpeg); 
+	background-size: cover;
+	/*width: 80%;
+	margin: auto;*/
+	/*text-align: center;*/
+/*	padding: 100px;*/
+
+}
+
+.work-card{
+    width: 400px;
+    height: 200px;
+    /* margin: 20px; */
+    /* float: left; */
+    background-color: #fff;
+    /* text-align: center; */
+    margin: 20px;
+    position: relative;
+    display: inline-flex;
+
+}
+/*
+blockquote{
+	color: white;
+	font-style: italic;
+	font-size: 36px;
+	padding: 70px;
+}
+
+blockquote span{
+ 
+ 	font-style: normal;
+ 	font-weight: 600;
+ 	display: block;
+
+}*/
+
+.blue{
+	background-color: #033048;
+	color:#fff;
+
+}
+
+.blue:hover{
+	background-color: #fff;
+	color:#033048;
+}
+
+#divider{
+	background-color: #f9e42e;
+	padding: 50px;
+	text-align: center;
+
+}
+
+#contact{
+	text-align: center;
+	color: #fff;
+	padding: 50px;
+}
+
+.contact-logo{
+	color: #f9e42e; 
+	/*yellow shade*/
+
+}
+
+
+#contact h6{
+	font-weight: 600;
+}
+
+.mobile-nav{
+	display: none;
+}
+
+/* ------------- mobile css ----------- */
+
+@media screen and (max-width:760px){
+
+	h1{
+		font-size: 70px;
+	}
+
+	.container h2{
+
+		font-size: 50px;
+	}
+
+	h3{
+
+		font-size: 35px;
+	}
+
+	.button{
+		padding: 10px 20px;
+	}
+
+	#center{
+		height: 400px;
+		padding: 50px;
+	}
+
+	.container{
+		/*margin: 1.5em;*/
+		width: auto;
+	}
+
+	 #About{
+	 	padding: 60px 15px;
+	 }
+
+	 /*.container h3{
+	 	font-size: 25px;
+	 }*/
+
+	 .container p{
+	 	width: 275px;
+        font-size: 15px;
+	 }
+
+	 .main-nav{
+	 	/*display: none;*/
+	 	visibility: hidden;
+	 /*	display: block;
+	 		float: right;
+	 		border: 2px solid yellow;
+    		padding: 0 10px;*/
+	 }
+
+	 .showactive{
+	 	visibility: visible;
+	 	/*text-align: center;*/
+	 }
+
+	 .showactive a{
+		font-size: 48px;
+	    font-weight: 600;
+	    float: left;
+	    width: 100%;
+	 }
+
+	 .showactive a:hover{
+
+	 }
+
+	 #center h2{
+	 	padding: 125px 10px;
+	 }
+
+	/* blockquote{
+
+	 	font-size: 28px;
+	 }*/
+
+	 .mobile-nav {
+
+	 		display: block;
+	 		float: right;
+	 		border: 2px solid yellow;
+    		padding: 0 10px;
+    		/*margin-right: 10px;*/
+	 	
+	 }
+
+	 i:hover{
+	 	opacity: 0.8;
+	 	cursor: pointer;
+	 }
+
+	  .ion-android-menu{
+	  	color: yellow;
+	  	font-size: 35px;
+	  }
+
+	 .ion-android-menu:before{
+	 	content: "\f20d";
+	 }
+
+	 /* .ion-android-menu:after{
+	 	display: none;
+	 }*/
+
+	.overlay{
+
+		position: fixed;
+		/*width: 100%;*/ 
+		/*was causing my icons to shift to the right*/
+		height:100%;
+        z-index: 2;
+        background:rgba(0, 36, 70, 0.9)
+	}
+
+      .ion-android-close:before{
+      	content: "\f2d7";
+      }
+
+    /*.ion-ios-arrow-down, .center h2{
+	font-size: 70px;
+
+     }*/
+
+     .ion-ios-arrow-down{
+     	visibility: hidden;
+     }
+
+
+
+}
+
+
+
+
+
+
+
+
