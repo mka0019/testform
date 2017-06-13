@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Casa test form">
+		<title>testing casa form</title>
+		<!-- external CSS link -->
+	<!-- 	<link rel="stylesheet" href="reset.css"> -->
+		<link rel="stylesheet" href="style.css">
+	 </head>
+	 <body>
+
+   <div id="main-nav">
+     <div class="container">
+       
+     </div>
+   </div>
+
+	 	<!-- 	<h1>CASA TEST FORM</h1> -->
+ <script src="https://js.stripe.com/v3/"></script>
+<form action="/charge" method="post" id="payment-form">
+
+ <div class="form-row">
+   <label for="card-element">
+     <!-- Donations  -->
+   </label>
+ </div>
+
+
+ <div class="group">
+    <label>
+      <span>Amount</span>
+      <input type="text" class="field" placeholder="enter desired amount"/>
+    </label>
+ </div>
+
+ <div class="header-title"> <h1>Card Information</h1> </div>
+
+  <div class="group">
+    <label>
+      <span>Name</span>
+      <input name="cardholder-name" class="field" placeholder="Jane Doe" />
+    </label>
+    <label>
+      <span>Phone</span>
+      <input class="field" placeholder="(123) 456-7890" type="tel" />
+    </label>
+  </div>
+  <div class="group">
+    <label>
+      <span>Card</span>
+      <div id="card-element" class="field"></div>
+    </label>
+  </div>
+
+   <div class="header-title"> <h1>Customer Information</h1> </div>
+
+    <div class="group">
+    <label>
+      <span>Address</span>
+      <input name="address-line1" class="field" placeholder="address1" />
+    </label>
+
+    <label>
+      <input name="address-line2" class="field" placeholder="address2" />
+    </label>
+    
+    <label>
+      <span>City</span>
+       <input name="address-city" class="field" placeholder="City"/>
+    </label>
+
+    <label>
+      <span>State</span>
+       <input name="address-state" class="field" placeholder="State"/>
+    </label>
+    
+     <label>
+    <span>ZIP code</span>
+    <input name="address-zip" class="field" placeholder="94110" />
+  </label>
+
+    <label>
+      <span>Country</span>
+       <input name="address-country" class="field" placeholder="Country"/>
+   </label>
+    
+  </div>
+
+
+
+
+<!-- <input type="text" class="set-amount" placeholder=""/> -->
+  <button type="submit">Donate</button>
+  <div class="outcome">
+    <div class="error" role="alert"></div>
+    <div class="success">
+      Success! Your Stripe token is <span class="token"></span>
+    </div>
+  </div>
+</form>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  <!--  -->
+ 
+ 
+	 </body>
+</html>
